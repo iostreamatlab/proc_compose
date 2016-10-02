@@ -24,4 +24,16 @@ describe 'Proc#compose' do
   it 'compose on & on' do
     expect((double * triple * negate).(2)).to eq(-12)
   end
+
+  context 'lambdas' do
+    it 'removes lambda information' do
+      a, b = [lambda {|x| x + 2 }, lambda {|y| y + 3 }]
+      # works by coercing to Proc
+      expect((a * b).(2)).to eq(7)
+
+      # if lambdas were preserved, this would be:
+      #expect{ (a * b).() }.to raise_error ArgumentError
+      expect{ (a * b).() }.to raise_error NoMethodError
+    end
+  end
 end

@@ -1,6 +1,6 @@
 # Proc#compose
 
-This gem does just one thing: it adds `compose` to `Proc`, with the alias `*`. Based on [this experiment](https://github.com/mooreniemi/compose).
+This gem does just one thing: it adds `compose` to `Proc`, with the alias `*`. Based on [this experiment](https://github.com/mooreniemi/compose). It performs just a _little_ worse than chaining `map`'d blocks, and does **not** [preserve lambdas](http://culttt.com/2015/05/13/what-are-lambdas-in-ruby/) ([they are coerced into `Proc`](spec/proc_compose_spec.rb#L35)).
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Given two `Proc`s, say:
+Given two [Proc](https://ruby-doc.org/core-2.2.0/Proc.html) objects, say:
 
 ```ruby
 double = proc {|a| a * 2 }
