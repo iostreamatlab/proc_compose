@@ -17,7 +17,7 @@
 
 #include <ruby.h>
 
-void Init_compose();
+void Init_proc_compose();
 
 VALUE compose(VALUE arg, VALUE procs) {
 	VALUE first = rb_ary_entry(procs, 0);
@@ -37,7 +37,7 @@ VALUE method_compose(VALUE self, VALUE other_proc) {
 	return result;
 }
 
-void Init_compose() {
+void Init_proc_compose() {
 	rb_define_method(rb_cProc, "compose", method_compose, -2);
 	rb_define_method(rb_cProc, "*", method_compose, -2);
 }

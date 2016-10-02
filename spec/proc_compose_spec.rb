@@ -1,10 +1,6 @@
 require 'spec_helper'
 
-describe ProcCompose do
-  it 'has a version number' do
-    expect(ProcCompose::VERSION).not_to be nil
-  end
-
+describe 'Proc#compose' do
   let(:double) do
     proc {|a| a * 2 }
   end
