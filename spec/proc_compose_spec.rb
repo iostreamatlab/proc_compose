@@ -14,6 +14,7 @@ describe ProcCompose do
   let(:negate) do
     proc {|a| -a }
   end
+
   it 'lives on Proc' do
     expect(double.respond_to?(:compose)).to eq(true)
     expect(double.respond_to?(:*)).to eq(true)
