@@ -40,7 +40,13 @@ Or install it yourself as:
 
 ## Usage
 
-Given two [Proc](https://ruby-doc.org/core-2.2.0/Proc.html) objects, say:
+First things first:
+
+```ruby
+require 'proc_compose'
+```
+
+Now, given two [Proc](https://ruby-doc.org/core-2.2.0/Proc.html) objects, say:
 
 ```ruby
 double = proc {|a| a * 2 }
