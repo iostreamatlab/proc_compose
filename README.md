@@ -71,7 +71,7 @@ Neat!
 
 ## Alternatives
 
-You can write your own version in Ruby, or use [funkify](https://github.com/banister/funkify) though its [performance is worse](https://github.com/mooreniemi/experiments/blob/master/lib/funkify.rb) it is pure Ruby and you get some really nice other stuff like `>=` and `|`!
+You can write your [own version in Ruby](http://mooreniemi.github.io/2016/09/18/combinators.html), or use [funkify](https://github.com/banister/funkify). Though its [performance is worse](https://github.com/mooreniemi/experiments/blob/master/lib/funkify.rb) it is pure Ruby and you get some really nice other stuff like `>=` and `|`!
 
 ## Contributing
 
