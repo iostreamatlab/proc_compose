@@ -20,6 +20,8 @@
 
 This gem does just one thing: it adds `compose` to `Proc`, with the alias `*`. Based on [this experiment](https://github.com/mooreniemi/compose). It performs just a _little_ worse than chaining `map`'d blocks, and currently does **not** [preserve lambdas](http://culttt.com/2015/05/13/what-are-lambdas-in-ruby/) ([they are coerced into `Proc`](spec/proc_compose_spec.rb#L35)).
 
+![performance graph of Proc#compose](proc_compose_performance.gif)
+
 ## Installation
 
 Add this line to your application's Gemfile:
