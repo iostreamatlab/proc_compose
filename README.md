@@ -1,6 +1,24 @@
+```
+
+ ___|)___________________________________________________________
+|___/____________________________________________________________
+|__/|____________________________________________________________
+|_/(|,\__________________________________________________________
+|_\_|_/__________________________________________________________
+|   |
+| (_|
+|
+|________________________________________________________________
+|__/___\_._______________________________________________________
+|__\___|_._______________________________________________________
+|_____/__________________________________________________________
+|____/___________________________________________________________ ejm
+
+```
+
 # Proc#compose
 
-This gem does just one thing: it adds `compose` to `Proc`, with the alias `*`. Based on [this experiment](https://github.com/mooreniemi/compose). It performs just a _little_ worse than chaining `map`'d blocks, and does **not** [preserve lambdas](http://culttt.com/2015/05/13/what-are-lambdas-in-ruby/) ([they are coerced into `Proc`](spec/proc_compose_spec.rb#L35)).
+This gem does just one thing: it adds `compose` to `Proc`, with the alias `*`. Based on [this experiment](https://github.com/mooreniemi/compose). It performs just a _little_ worse than chaining `map`'d blocks, and currently does **not** [preserve lambdas](http://culttt.com/2015/05/13/what-are-lambdas-in-ruby/) ([they are coerced into `Proc`](spec/proc_compose_spec.rb#L35)).
 
 ## Installation
 
