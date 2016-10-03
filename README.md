@@ -47,7 +47,7 @@ double = proc {|a| a * 2 }
 triple = proc {|a| a * 3 }
 ```
 
-Allow composition:
+We can compose them:
 
 ```ruby
 (double * triple).(2)
@@ -60,6 +60,8 @@ So you can do things like this:
 [1, 2, 3, 4, 5].map(&(double * triple))
 => [6, 12, 18, 24, 30]
 ```
+
+Neat!
 
 ## Contributing
 
