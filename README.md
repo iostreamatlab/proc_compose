@@ -63,6 +63,10 @@ So you can do things like this:
 
 Neat!
 
+## Alternatives
+
+You can write your own version in Ruby, or use [funkify](https://github.com/banister/funkify) though its [performance is worse](https://github.com/mooreniemi/experiments/blob/master/lib/funkify.rb) it is pure Ruby and you get some really nice other stuff like `>=` and `|`!
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mooreniemi/proc_compose. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
